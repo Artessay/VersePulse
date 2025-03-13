@@ -16,11 +16,16 @@ conda activate verse-pulse
 pip install torch
 pip install -e .
 
-
 # flash attention 2
-pip3 install flash-attn --no-build-isolation
-pip install --no-cache-dir flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
-pip install wandb
+pip install flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+```
+
+## Quick Start
+
+### GRPO Training
+
+```bash
+bash scripts/run_qwen2_5_vl_7b_geo.sh
 ```
 
 ## Acknowledgement

@@ -1,2 +1,22 @@
 # VersePulse
+
 VersePulse: Multimodal RAG Engine integrating Real-Time Search with LLMs for accurate, dynamic cross-modal content generation.
+
+## Installation
+
+```bash
+git clone https://github.com/Artessay/VersePulse.git
+cd VersePulse
+```
+
+```bash
+conda create -n verse-pulse python=3.11 -y
+conda activate verse-pulse
+pip install torch
+pip install -e .
+```
+
+## Acknowledgement
+
+- [EasyR1](https://github.com/hiyouga/EasyR1)
+- [Search-R1](https://github.com/PeterGriffinJin/Search-R1)

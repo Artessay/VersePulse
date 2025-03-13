@@ -1,4 +1,4 @@
-# Contributing to EasyR1
+# Contributing to VersePulse
 
 Everyone is welcome to contribute, and we value everybody's contribution. Code contributions are not the only way to help the community. Answering questions, helping others, and improving the documentation are also immensely valuable.
 
@@ -10,7 +10,7 @@ However you choose to contribute, please be mindful and respect our [code of con
 
 ## Ways to contribute
 
-There are several ways you can contribute to EasyR1:
+There are several ways you can contribute to VersePulse:
 
 * Fix outstanding issues with the existing code.
 * Submit issues related to bugs or desired new features.
@@ -18,18 +18,18 @@ There are several ways you can contribute to EasyR1:
 
 ### Style guide
 
-EasyR1 follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html), check it for details.
+VersePulse follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html), check it for details.
 
 ### Create a Pull Request
 
-1. Fork the [repository](https://github.com/hiyouga/EasyR1) by clicking on the [Fork](https://github.com/hiyouga/EasyR1/fork) button on the repository's page. This creates a copy of the code under your GitHub user account.
+1. Fork the [repository](https://github.com/Artessay/VersePulse) by clicking on the [Fork](https://github.com/Artessay/VersePulse/fork) button on the repository's page. This creates a copy of the code under your GitHub user account.
 
 2. Clone your fork to your local disk, and add the base repository as a remote:
 
 ```bash
-git clone git@github.com:[username]/EasyR1.git
-cd EasyR1
-git remote add upstream https://github.com/hiyouga/EasyR1.git
+git clone git@github.com:[username]/VersePulse.git
+cd VersePulse
+git remote add upstream https://github.com/Artessay/VersePulse.git
 ```
 
 3. Create a new branch to hold your development changes:
@@ -61,4 +61,4 @@ git rebase upstream/main
 git push -u origin dev_your_branch
 ```
 
-7. Create a merge request from your branch `dev_your_branch` at [origin repo](https://github.com/hiyouga/EasyR1).
+7. Create a merge request from your branch `dev_your_branch` at [origin repo](https://github.com/Artessay/VersePulse).

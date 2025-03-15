@@ -10,13 +10,30 @@ def test_rag_evaluator():
     )
 
     user_input = "When and Where Albert Einstein was born?"
-    retrieved_contexts = [
+
+    rag_evaluator = RetrievalQualityEvaluator(llm)
+
+    # completely relevant
+    retrieved_contexts_1 = [
         "Albert Einstein was born March 14, 1879.",
         "Albert Einstein was born at Ulm, in Württemberg, Germany.",
     ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_1)
+    assert math.isclose(evaluation_result, 1.0)
 
-    rag_evaluator = RetrievalQualityEvaluator(llm)
-    score = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts)
+    # not relevant
+    retrieved_contexts_2 = [
+        "Wikis are powered by wiki software, also known as wiki engines.",
+        "There are hundreds of thousands of wikis in use, both public and private.",
+    ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_2)
+    assert math.isclose(evaluation_result, 0.0)
 
-    assert math.isclose(score, 1.0, abs_tol=1e-3)
+    # partially relevant
+    retrieved_contexts_3 = [
+        "Born in the German Empire, Einstein moved to Switzerland in 1895",
+        "Wikis are powered by wiki software, also known as wiki engines.",
+    ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_3)
+    assert math.isclose(evaluation_result, 0.5)
     

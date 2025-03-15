@@ -30,7 +30,6 @@ class RetrievalQualityEvaluator:
         )
 
         score = self.scorer.single_turn_score(sample)
-        # score = await self.scorer.single_turn_ascore(sample)
 
         return score
 
@@ -39,17 +38,35 @@ if __name__ == "__main__":
     from langchain_openai import ChatOpenAI
     
     llm = ChatOpenAI(
+        # model="qwen-turbo",
         model="qwen2.5-1.5b-instruct",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
 
     user_input = "When and Where Albert Einstein was born?"
-    retrieved_contexts = [
+
+    rag_evaluator = RetrievalQualityEvaluator(llm)
+
+    # completely relevant
+    retrieved_contexts_1 = [
         "Albert Einstein was born March 14, 1879.",
         "Albert Einstein was born at Ulm, in Württemberg, Germany.",
     ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_1)
+    print(evaluation_result)
 
-    rag_evaluator = RetrievalQualityEvaluator(llm)
-    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts)
+    # not relevant
+    retrieved_contexts_2 = [
+        "Wikis are powered by wiki software, also known as wiki engines.",
+        "There are hundreds of thousands of wikis in use, both public and private.",
+    ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_2)
+    print(evaluation_result)
 
+    # partially relevant
+    retrieved_contexts_3 = [
+        "Born in the German Empire, Einstein moved to Switzerland in 1895",
+        "Wikis are powered by wiki software, also known as wiki engines.",
+    ]
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts_3)
     print(evaluation_result)

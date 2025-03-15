@@ -1,57 +1,55 @@
-import pandas as pd
-from ragas import evaluate
-from ragas.metrics import answer_relevancy, context_relevancy
 
-class RAGRetrievalQualityEvaluator:
-    def __init__(self):
-        # 初始化评估所需的指标
-        self.metrics = [answer_relevancy, context_relevancy]
+from ragas.dataset_schema import SingleTurnSample
+from ragas.llms import LangchainLLMWrapper
+from ragas.metrics import ContextRelevance
+from langchain_core.language_models import BaseLanguageModel
 
-    def evaluate_retrieval(self, questions, retrieved_contexts, answers):
+from typing import List
+
+class RetrievalQualityEvaluator:
+    def __init__(self, llm: BaseLanguageModel):
+        evaluator_llm = LangchainLLMWrapper(llm)
+        self.scorer = ContextRelevance(llm=evaluator_llm)
+
+    def evaluate_retrieval(self, user_input: str, retrieved_contexts: List[str]):
+        """Context Relevance evaluates whether the retrieved_contexts (chunks or passages) are pertinent to the user_input. This is done via two independent "LLM-as-a-judge" prompt calls that each rate the relevance on a scale of 0, 1, or 2. The ratings are then converted to a [0,1] scale and averaged to produce the final score. Higher scores indicate that the contexts are more closely aligned with the user's query.
+
+            0 → The retrieved contexts are not relevant to the user’s query at all.
+
+            1 → The contexts are partially relevant.
+            
+            2 → The contexts are completely relevant.
+
+            Step 1: The LLM is prompted with two distinct templates (template_relevance1 and template_relevance2) to evaluate the relevance of the retrieved contexts concerning the user's query. Each prompt returns a relevance rating of 0, 1, or 2.
+
+            Step 2: Each rating is normalized to a [0,1] scale by dividing by 2. If both ratings are valid, the final score is the average of these normalized values; if only one is valid, that score is used.
         """
-        评估 RAG 检索质量
+        sample = SingleTurnSample(
+            user_input=user_input,
+            retrieved_contexts=retrieved_contexts
+        )
 
-        :param questions: 用户提出的问题列表
-        :param retrieved_contexts: 检索到的上下文列表，每个元素对应一个问题的检索结果
-        :param answers: 生成的答案列表，每个元素对应一个问题的答案
-        :return: 评估结果
-        """
-        # 确保输入的列表长度一致
-        if len(questions) != len(retrieved_contexts) != len(answers):
-            raise ValueError("问题、检索到的上下文和答案的列表长度必须一致")
+        score = self.scorer.single_turn_score(sample)
+        # score = await self.scorer.single_turn_ascore(sample)
 
-        # 创建 DataFrame 来存储评估数据
-        data = {
-            "question": questions,
-            "contexts": retrieved_contexts,
-            "answer": answers
-        }
-        df = pd.DataFrame(data)
-
-        # 进行评估
-        result = evaluate(df, metrics=self.metrics)
-
-        return result
+        return score
 
 
-# 示例使用
 if __name__ == "__main__":
-    # 示例问题
-    questions = [
-        "什么是人工智能？",
-        "机器学习有哪些常见算法？"
-    ]
-    # 示例检索到的上下文
+    from langchain_openai import ChatOpenAI
+    
+    llm = ChatOpenAI(
+        model="qwen2.5-1.5b-instruct",
+        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    )
+
+    user_input = "When and Where Albert Einstein was born?"
     retrieved_contexts = [
-        ["人工智能是一门研究如何使计算机能够模拟人类智能的学科。"],
-        ["机器学习常见算法包括决策树、支持向量机等。"]
-    ]
-    # 示例生成的答案
-    answers = [
-        "人工智能是模拟人类智能的学科。",
-        "常见算法有决策树和支持向量机。"
+        "Albert Einstein was born March 14, 1879.",
+        "Albert Einstein was born at Ulm, in Württemberg, Germany.",
     ]
 
-    evaluator = RAGRetrievalQualityEvaluator()
-    evaluation_result = evaluator.evaluate_retrieval(questions, retrieved_contexts, answers)
+    rag_evaluator = RetrievalQualityEvaluator(llm)
+    evaluation_result = rag_evaluator.evaluate_retrieval(user_input, retrieved_contexts)
+
     print(evaluation_result)

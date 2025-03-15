@@ -1,7 +1,7 @@
 import math
 from langchain_openai import ChatOpenAI
 
-from search import RetrievalQualityEvaluator
+from verl.searcher import RetrievalQualityEvaluator
 
 def test_rag_evaluator():
     llm = ChatOpenAI(

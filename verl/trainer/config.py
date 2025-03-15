@@ -86,11 +86,17 @@ class TrainerConfig:
 
 
 @dataclass
+class SearchConfig:
+    enable: bool = False
+
+
+@dataclass
 class PPOConfig:
     data: DataConfig = field(default_factory=DataConfig)
     worker: WorkerConfig = field(default_factory=WorkerConfig)
     algorithm: AlgorithmConfig = field(default_factory=AlgorithmConfig)
     trainer: TrainerConfig = field(default_factory=TrainerConfig)
+    searcher: SearchConfig = field(default_factory=SearchConfig)
 
     def post_init(self):
         self.worker.rollout.prompt_length = self.data.max_prompt_length

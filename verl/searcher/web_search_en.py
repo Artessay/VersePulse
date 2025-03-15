@@ -1,5 +1,5 @@
 import os
-from search import WebSearcher
+from verl.searcher import WebSearcher
 
 class WebSearcherEnglish(WebSearcher):
     def __init__(self, api_key: str = None):

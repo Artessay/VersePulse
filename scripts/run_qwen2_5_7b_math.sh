@@ -12,4 +12,6 @@ python3 -m verl.trainer.main \
     config=examples/grpo_example.yaml \
     data.system_prompt="${SYSTEM_PROMPT}" \
     worker.actor.model.model_path=${MODEL_PATH} \
+    trainer.remove_previous_ckpt=True \
+    trainer.experiment_name=qwen2_5_7b_math \
     trainer.n_gpus_per_node=4

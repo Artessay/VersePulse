@@ -13,4 +13,6 @@ python3 -m verl.trainer.main \
     data.system_prompt="${SYSTEM_PROMPT}" \
     worker.actor.model.model_path=${MODEL_PATH} \
     trainer.logger=['console','swanlab'] \
+    trainer.remove_previous_ckpt=True \
+    trainer.experiment_name=qwen2_5_7b_math \
     trainer.n_gpus_per_node=4

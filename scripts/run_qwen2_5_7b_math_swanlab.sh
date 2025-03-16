@@ -9,10 +9,9 @@ SYSTEM_PROMPT="""You FIRST think about the reasoning process as an internal mono
  The reasoning process MUST BE enclosed within <think> </think> tags. The final answer MUST BE put in \boxed{}."""
 
 python3 -m verl.trainer.main \
-    config=examples/grpo_example.yaml \
+    config=examples/grpo_math.yaml \
     data.system_prompt="${SYSTEM_PROMPT}" \
     worker.actor.model.model_path=${MODEL_PATH} \
     trainer.logger=['console','swanlab'] \
-    trainer.remove_previous_ckpt=True \
     trainer.experiment_name=qwen2_5_7b_math \
     trainer.n_gpus_per_node=4

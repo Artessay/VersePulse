@@ -14,7 +14,7 @@ class RetrievalQualityEvaluator:
     def evaluate_retrieval(self, user_input: str, retrieved_contexts: List[str]):
         """Context Relevance evaluates whether the retrieved_contexts (chunks or passages) are pertinent to the user_input. This is done via two independent "LLM-as-a-judge" prompt calls that each rate the relevance on a scale of 0, 1, or 2. The ratings are then converted to a [0,1] scale and averaged to produce the final score. Higher scores indicate that the contexts are more closely aligned with the user's query.
 
-            0 → The retrieved contexts are not relevant to the user’s query at all.
+            0 → The retrieved contexts are not relevant to the user's query at all.
 
             1 → The contexts are partially relevant.
             

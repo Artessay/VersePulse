@@ -1,0 +1,430 @@
+{"id": "test_0", "question": "How tall is Mount McKinley?", "golden_answers": ["20\\s?,?\\s?(32|40)0\\s?-?\\s?f(ee|oo)t|6,194-meter|20,?237\\s*f(oo|ee)?t|20,?073\\s*f(oo|ee)?t|6,?168\\s*m|6,118\\s*m|6\\,194 m|20\\,322 feet"]}
+{"id": "test_1", "question": "what Arthur Miller play recounts his marriage to Marilyn Monroe?", "golden_answers": ["After the Fall|Finishing the Play"]}
+{"id": "test_2", "question": "What is the most populated country in the world?", "golden_answers": ["China"]}
+{"id": "test_3", "question": "What country are Volvo automobiles made in?", "golden_answers": ["Sweden"]}
+{"id": "test_4", "question": "How many feet above sea level is Jerusalem?", "golden_answers": ["\\b2,?[4567][0-9][0-9]\\b"]}
+{"id": "test_5", "question": "What is Britney Spears' middle name?", "golden_answers": ["Jean"]}
+{"id": "test_6", "question": "What is David Lee Roth's birthday?", "golden_answers": ["Oct(.|ober)?\\s* 10|1954"]}
+{"id": "test_7", "question": "How did Jerry Garcia Die?", "golden_answers": ["drug abuse|heart attack"]}
+{"id": "test_8", "question": "How many republics made up the Soviet Union?", "golden_answers": ["\\b15\\b|fifteen|Soviet"]}
+{"id": "test_9", "question": "What is the diameter of the moon?", "golden_answers": ["2,159 miles|3,?474(.2[0-9]*)?\\s*m|3\\,474 km|2\\,159\\.2 miles"]}
+{"id": "test_10", "question": "What modern country is home to the ancient city of Babylon?", "golden_answers": ["Iraq"]}
+{"id": "test_11", "question": "What country is Hyundai from?", "golden_answers": ["Republic of Korea|South Korea"]}
+{"id": "test_12", "question": "How fast is an eye blink?", "golden_answers": ["\\.(03|[1-4].*)\\s*s(econds)?|0.[1-4].*(ms|milliseconds)"]}
+{"id": "test_13", "question": "What is the scientific name for tobacco?", "golden_answers": ["Nicotiana alata|Nicotiana tabacum|Nicotiana rustica"]}
+{"id": "test_14", "question": "What dissolves gold?", "golden_answers": ["cyanide|aqua regia|hydrochloric.*nitrid|HCl.*HNO3"]}
+{"id": "test_15", "question": "When did Marian Anderson sing at the Lincoln Memorial?", "golden_answers": ["1939"]}
+{"id": "test_16", "question": "When is christmas?", "golden_answers": ["Dec.*\\b2[45]\\b"]}
+{"id": "test_17", "question": "Where is the Sea of Tranquility?", "golden_answers": ["moon"]}
+{"id": "test_18", "question": "How did Dennis Brown die?", "golden_answers": ["pneumo|lung"]}
+{"id": "test_19", "question": "How many justices does the United States Supreme Court have?", "golden_answers": ["nine|\\b9\\b"]}
+{"id": "test_20", "question": "What country is know as the \"Land of the Rising Sun\"?", "golden_answers": ["Japan"]}
+{"id": "test_21", "question": "Where did Golda Meir grow up?", "golden_answers": ["Milwaukee|Ukraine|Kiev"]}
+{"id": "test_22", "question": "When was the first Star Wars movie made?", "golden_answers": ["1977|May 25"]}
+{"id": "test_23", "question": "When did the Persian Gulf War occur?", "golden_answers": ["1991"]}
+{"id": "test_24", "question": "How did Micky Mantle die?", "golden_answers": ["cancer|Liver tumour"]}
+{"id": "test_25", "question": "What country did Marco Polo come from?", "golden_answers": ["Ital(y|ian)"]}
+{"id": "test_26", "question": "How far is the Titanic under water?", "golden_answers": ["12,?(000|500|460)\\s*f(ee|oo)?t|3,?800\\s*m"]}
+{"id": "test_27", "question": "What did George Washington call his house?", "golden_answers": ["Mount Vernon"]}
+{"id": "test_28", "question": "Who is the author of Neuromancer?", "golden_answers": ["Gibson"]}
+{"id": "test_29", "question": "How many colors do you need to color a planar graph?", "golden_answers": ["four|\\b4\\b"]}
+{"id": "test_30", "question": "who is Barrack Obama?", "golden_answers": ["president.*U.*S|U.*S.*president|President Barack Obama\\'s"]}
+{"id": "test_31", "question": "What are Brazil's national colors?", "golden_answers": ["bright yellow and blue|green and yellow"]}
+{"id": "test_32", "question": "What is the oldest sports trophy?", "golden_answers": ["America(\\s?')?s Cup"]}
+{"id": "test_33", "question": "How did Chicago get its name?", "golden_answers": ["French.*(onion|garlic)|the wild leeks|the Miami and Illinois Tribes"]}
+{"id": "test_34", "question": "What day did Martin Luther King, Jr. get assassinated?", "golden_answers": ["April 4, 1968|1968\\-04\\-04"]}
+{"id": "test_35", "question": "What Latin American country is the leading exporter of sugar cane?", "golden_answers": ["Brazil"]}
+{"id": "test_36", "question": "What is the term for arable land left unseeded for one season?", "golden_answers": ["fallow"]}
+{"id": "test_37", "question": "What date did the Lusitania sink?", "golden_answers": ["1915|May"]}
+{"id": "test_38", "question": "What American commodore demanded that Japan trade with the United States?", "golden_answers": ["Perry"]}
+{"id": "test_39", "question": "What is the most populous city in the United States?", "golden_answers": ["New\\s?York"]}
+{"id": "test_40", "question": "Who was Woodrow Wilson's First Lady?", "golden_answers": ["(Ellen|Edith)(_Axson_Wilson)?"]}
+{"id": "test_41", "question": "What country did Iraq invade in 1990?", "golden_answers": ["Kuwait"]}
+{"id": "test_42", "question": "What instrument measures radioactivity?", "golden_answers": ["Geiger|dosimeter|End\\-window G\\-M detectors"]}
+{"id": "test_43", "question": "How did John Dillinger die?", "golden_answers": ["gunned down|shot"]}
+{"id": "test_44", "question": "What country other than Germany has German as its official language?", "golden_answers": ["Austria|Switzerland|Belgium|Luxembourg|Lichtenstein"]}
+{"id": "test_45", "question": "Who did Scott Bakula play in \"American Beauty\"?", "golden_answers": ["Jim"]}
+{"id": "test_46", "question": "where is L\u00f8n used?", "golden_answers": ["Christiania"]}
+{"id": "test_47", "question": "What university did Thomas Jefferson found?", "golden_answers": ["Virginia"]}
+{"id": "test_48", "question": "In what Canadian province are most people of French descent?", "golden_answers": ["Qu[e\u00e9]bec"]}
+{"id": "test_49", "question": "What president served 2 nonconsecutive terms?", "golden_answers": ["Grover Cleveland|two non\\-consecutive terms"]}
+{"id": "test_50", "question": "What sports stadium has been billed as \"the eighth wonder of the world\"?", "golden_answers": ["Astrodome"]}
+{"id": "test_51", "question": "How many interceptions did Joe Montana throw in four Superbowls?", "golden_answers": ["never|none|\\b0\\b|zero"]}
+{"id": "test_52", "question": "what is Speedy Claxton's real name?", "golden_answers": ["Craig"]}
+{"id": "test_53", "question": "What is the world's largest coral reef?", "golden_answers": ["Great Barrier Reef"]}
+{"id": "test_54", "question": "Where was Hans Christian Anderson born?", "golden_answers": ["Denmark|Odense"]}
+{"id": "test_55", "question": "What American revolutionary general turned over West Point to the British?", "golden_answers": ["Arnold"]}
+{"id": "test_56", "question": "Who started the Protestant reformation?", "golden_answers": ["Luther"]}
+{"id": "test_57", "question": "What is the highest mountain in South America?", "golden_answers": ["Aconcagua"]}
+{"id": "test_58", "question": "What confederate general was responsible for the defeat at Gettysburg?", "golden_answers": ["Lee|Pickett"]}
+{"id": "test_59", "question": "how deep is marianas trench?", "golden_answers": ["10[.,]?([89][0-9][0-9])\\s*(k|kilo)?m|6,?[89][0-9][0-9]\\s*mi|3[56],?[0-9]{3}\\s*(f(ee|oo)?t|')"]}
+{"id": "test_60", "question": "When is Mexico's Independence Day?", "golden_answers": ["Sep.*16"]}
+{"id": "test_61", "question": "What is the scientific name for red imported fire ants?", "golden_answers": ["Solenopsis invicta|The red imported fire ant \\("]}
+{"id": "test_62", "question": "What was the name of FDR's dog?", "golden_answers": ["Fala"]}
+{"id": "test_63", "question": "How tall is Al Pacino?", "golden_answers": ["5\\s*(f(oo|ee)?t|').*6\\s*(in(ch)?(es)?|\")|1.7.*cm|1\\.7"]}
+{"id": "test_64", "question": "What do grasshoppers eat?", "golden_answers": ["grass\\b|plant|roses"]}
+{"id": "test_65", "question": "When was the U.S. invasion of Haiti?", "golden_answers": ["1994|1915"]}
+{"id": "test_66", "question": "What American feminist appeared on a silver dollar?", "golden_answers": ["Susan.*Anthony"]}
+{"id": "test_67", "question": "What is the richest country in the world?", "golden_answers": ["Qatar"]}
+{"id": "test_68", "question": "What language do they officially speak in New Caledonia?", "golden_answers": ["French"]}
+{"id": "test_69", "question": "Who said \"I have not begun to fight!\"?", "golden_answers": ["John Paul Jones"]}
+{"id": "test_70", "question": "What ocean are the Gilbert Islands in?", "golden_answers": ["Pacific"]}
+{"id": "test_71", "question": "What year did the shuttle Challenger explode?", "golden_answers": ["1986"]}
+{"id": "test_72", "question": "How many chromosomes does a human zygote have?", "golden_answers": ["23 pairs|46"]}
+{"id": "test_73", "question": "How do you say \"cat\" in the French language?", "golden_answers": ["chat"]}
+{"id": "test_74", "question": "What continent is India on?", "golden_answers": ["Asia"]}
+{"id": "test_75", "question": "What school did Emmitt Smith go to?", "golden_answers": ["Escambia High School"]}
+{"id": "test_76", "question": "what number is considered unlucky in Japanese culture?", "golden_answers": ["four|\\b4\\b|1"]}
+{"id": "test_77", "question": "What is the traditional dish served at Wimbledon?", "golden_answers": ["strawberr.*cream"]}
+{"id": "test_78", "question": "How close is Mesa to Phoenix?", "golden_answers": ["(1[789]|20) mile|3[0-4]\\s*(km|kilometers)|19\\.9miles|19\\.9 miles|26 min \\(19\\.9 mi\\) via US\\-60 W and I\\-10 W"]}
+{"id": "test_79", "question": "When did they put Mir down?", "golden_answers": ["1999|2001"]}
+{"id": "test_80", "question": "What is egg white called?", "golden_answers": ["glair|album[ei]n"]}
+{"id": "test_81", "question": "who portrays the twelfth doctor in BBC TV series Doctor Who?", "golden_answers": ["Peter Capaldi|Capaldi"]}
+{"id": "test_82", "question": "Which African country's major export is coffee?", "golden_answers": ["Ethiopia|Tanzania|Uganda"]}
+{"id": "test_83", "question": "What film did Liza Minnelli win a best actress Oscar for?", "golden_answers": ["Cabaret"]}
+{"id": "test_84", "question": "how many months are in a year?", "golden_answers": ["\\b12\\b|twelve"]}
+{"id": "test_85", "question": "What is Australia's national blossom?", "golden_answers": ["wattle"]}
+{"id": "test_86", "question": "When was the Titanic built?", "golden_answers": ["1909|1911"]}
+{"id": "test_87", "question": "Who is the governor of Tennessee in 2002?", "golden_answers": ["Sundquist"]}
+{"id": "test_88", "question": "When was the first Superbowl?", "golden_answers": ["1967"]}
+{"id": "test_89", "question": "What is the normal pulse rate?", "golden_answers": ["70 beats per minute|60.*100\\s*(bpm|beats per minute)"]}
+{"id": "test_90", "question": "Where is Mae West buried?", "golden_answers": ["Cypress Hills Abbey|New York"]}
+{"id": "test_91", "question": "What 20th century American president died at Warm Springs, Georgia?", "golden_answers": ["Roosevelt|FDR"]}
+{"id": "test_92", "question": "What is the beginning date for the Hershey foods company?", "golden_answers": ["1903|1894"]}
+{"id": "test_93", "question": "What are the opening words of the Declaration of Independence?", "golden_answers": ["We hold these truths|When in the Course of human events"]}
+{"id": "test_94", "question": "Who starred in \"The Poseidon Adventure\"?", "golden_answers": ["Gene Hackman|McDowall|Borgnine"]}
+{"id": "test_95", "question": "What is the active ingredient in Tylenol?", "golden_answers": ["acetaminophen"]}
+{"id": "test_96", "question": "Who makes Magic Chef refrigerators?", "golden_answers": ["Maytag|CNA|MC Appliance"]}
+{"id": "test_97", "question": "Where is Mesa Verde National park?", "golden_answers": ["Colo(\\.?|rado)|Cortez"]}
+{"id": "test_98", "question": "What is the profession of John Cusack's character in the 1999 film \"Pushing Tin\"?", "golden_answers": ["air(\\s|-)traffic(\\s|-)controller"]}
+{"id": "test_99", "question": "What city's biggest shopping district is called the Ginza District?", "golden_answers": ["Tokyo('s)?"]}
+{"id": "test_100", "question": "What is Eminem's real name?", "golden_answers": ["Marshall.*?Mathers"]}
+{"id": "test_101", "question": "What river is called \"China's Sorrow\"?", "golden_answers": ["Yellow|Yangzi|Yangtze"]}
+{"id": "test_102", "question": "How long before bankruptcy is removed from a credit report?", "golden_answers": ["(10|ten|\\b7|seven) years"]}
+{"id": "test_103", "question": "How many stories are in the Sears Tower?", "golden_answers": ["(100|110|10[6-9])"]}
+{"id": "test_104", "question": "When was D-Day?", "golden_answers": ["1944|June? 6"]}
+{"id": "test_105", "question": "What group sang the song \"Happy Together\"?", "golden_answers": ["Turtles"]}
+{"id": "test_106", "question": "What Chinese Dynasty was during 1412-1431?", "golden_answers": ["Ming"]}
+{"id": "test_107", "question": "What province is Calgary located in?", "golden_answers": ["Alberta"]}
+{"id": "test_108", "question": "How much area does the Everglades cover?", "golden_answers": ["2,000 square miles|734\\s*sq(uare)?\\s*m(iles)?|1,?900\\s*(square\\s*)?km"]}
+{"id": "test_109", "question": "What band was Jimmy Page in before Led Zeppelin?", "golden_answers": ["Yardbirds"]}
+{"id": "test_110", "question": "What position did Satchel Paige play in professional baseball?", "golden_answers": ["pitcher"]}
+{"id": "test_111", "question": "How many Platonic solids do we have?", "golden_answers": ["\\b5\\b|five"]}
+{"id": "test_112", "question": "What country artist is nicknamed Tater?", "golden_answers": ["Little Jimmy Dickens|Williams"]}
+{"id": "test_113", "question": "When was John Lennon born?", "golden_answers": ["1940|October"]}
+{"id": "test_114", "question": "What capital city do you see from the top of Bunker Hill?", "golden_answers": ["Boston"]}
+{"id": "test_115", "question": "How fast does Randy Johnson throw?", "golden_answers": ["(95|98|100(.1)?).*?(mph|miles per hour)|160\\s*(km|kilometers).*h|102 MPH|randy Johnson|the fastest pitch|the theoretical maximum speed that a pitcher can throw"]}
+{"id": "test_116", "question": "What is capital of Maryland?", "golden_answers": ["Annapolis|the State capital of Maryland"]}
+{"id": "test_117", "question": "When did Willis Haviland Carrier make the air conditioner?", "golden_answers": ["1902"]}
+{"id": "test_118", "question": "How much does the capitol dome weigh?", "golden_answers": ["14.1 million pounds"]}
+{"id": "test_119", "question": "When was the Buckingham Palace built in London, England?", "golden_answers": ["1703"]}
+{"id": "test_120", "question": "What duo lost their Grammy for best new artist when it was discovered that they lip-synched their songs?", "golden_answers": ["Milli Vanilli"]}
+{"id": "test_121", "question": "When was the first Ford Mustang made?", "golden_answers": ["1964"]}
+{"id": "test_122", "question": "How big is the Great Pyramid?", "golden_answers": ["146.5\\s*m|481\\s*f(oo|ee)?t|138.8\\s*m|455\\s*f(oo|ee)?t|230.4\\s*m|756\\s*f(oo|ee)?t"]}
+{"id": "test_123", "question": "What is the capital of Kentucky?", "golden_answers": ["Frankfort"]}
+{"id": "test_124", "question": "What is the capital city of Ukraine?", "golden_answers": ["Kiev"]}
+{"id": "test_125", "question": "How tall is Allen Iverson?", "golden_answers": ["6\\s?-?\\s?f(ee|oo)?t|six\\s?-?feet|1.83\\s*m|183\\s*cm|5ft 11in"]}
+{"id": "test_126", "question": "What currency is used in Ukraine?", "golden_answers": ["UAH|hryvnia"]}
+{"id": "test_127", "question": "How do you say \"pig\" in Spanish?", "golden_answers": ["Cerdo"]}
+{"id": "test_128", "question": "What composer wrote \"Die Gotterdammerung\"?", "golden_answers": ["Wagner"]}
+{"id": "test_129", "question": "How old was Nolan Ryan when he retired?", "golden_answers": ["4(4|6)"]}
+{"id": "test_130", "question": "Who invented bitcoin?", "golden_answers": ["Nakamoto"]}
+{"id": "test_131", "question": "How old did Jesus die?", "golden_answers": ["\\b33\\b|thirty-three"]}
+{"id": "test_132", "question": "Where is the Salton Sea?", "golden_answers": ["Calif(\\s?\\.|ornia)"]}
+{"id": "test_133", "question": "Which country colonized Hong Kong?", "golden_answers": ["Britain"]}
+{"id": "test_134", "question": "When was the first atomic bomb dropped?", "golden_answers": ["Aug.*1945|1945"]}
+{"id": "test_135", "question": "What player on a basketball team usually plays the post or pivot position?", "golden_answers": ["center"]}
+{"id": "test_136", "question": "Where is the highest point on earth?", "golden_answers": ["Everest"]}
+{"id": "test_137", "question": "What book did Rachel Carson write in 1962?", "golden_answers": ["Silent Spring"]}
+{"id": "test_138", "question": "When was the first televised World Series?", "golden_answers": ["1947"]}
+{"id": "test_139", "question": "How high is the pitcher's mound?", "golden_answers": ["(ten|10)\\s*in(ch(es)?)?|25.4\\s*(cm|centimeters?)"]}
+{"id": "test_140", "question": "What are baby frogs called?", "golden_answers": ["tadpole"]}
+{"id": "test_141", "question": "what can mandrills at the Colchester Zoo do?", "golden_answers": ["cover.*eye"]}
+{"id": "test_142", "question": "What actress has received the most Oscar nominations?", "golden_answers": ["Hepburn|Streep"]}
+{"id": "test_143", "question": "What was the name of Sherlock Holmes' brother?", "golden_answers": ["Mycroft"]}
+{"id": "test_144", "question": "chemical symbol of ethylene ?", "golden_answers": ["C.*2.*H.*4"]}
+{"id": "test_145", "question": "What year was Robert Frost born?", "golden_answers": ["187(4|5)"]}
+{"id": "test_146", "question": "What was Dr. Seuss' real name?", "golden_answers": ["Theodore? (Seuss )?Geisel|Geisel"]}
+{"id": "test_147", "question": "When did Led Zeppelin appear on BBC?", "golden_answers": ["1969|1997"]}
+{"id": "test_148", "question": "What is the distance from Jupiter to the sun?", "golden_answers": ["(777|800) million kilometers|778,?500,?000\\s*km|483,?800,?000\\s*miles|483\\.8 million miles"]}
+{"id": "test_149", "question": "what instrument does the concertmaster of an orchestra usually play?", "golden_answers": ["violin"]}
+{"id": "test_150", "question": "What does the bugler play at the end of the day on a US military base?", "golden_answers": ["Taps"]}
+{"id": "test_151", "question": "How did Harry Houdini die?", "golden_answers": ["ruptured appendix|peritonitis|appendicitis"]}
+{"id": "test_152", "question": "What was the name of the stage play that A. Lincoln died at?", "golden_answers": ["Our American Cousin"]}
+{"id": "test_153", "question": "What's the name of King Arthur's sword?", "golden_answers": ["Excalibur"]}
+{"id": "test_154", "question": "What country's flag flies over the Canary Islands?", "golden_answers": ["Spa(in|nish)"]}
+{"id": "test_155", "question": "When did president Herbert Hoover die?", "golden_answers": ["1964"]}
+{"id": "test_156", "question": "When was Prince Charles born?", "golden_answers": ["1948"]}
+{"id": "test_157", "question": "How many Mars days are there in a Martian year?", "golden_answers": ["66[89]"]}
+{"id": "test_158", "question": "What is the highest mountain in the Czech Republic?", "golden_answers": ["Sne[z\u017e]ka|Sn\\\u011b\\\u017eka"]}
+{"id": "test_159", "question": "How many years are there in a French president's term?", "golden_answers": ["seven|\\b7\\b"]}
+{"id": "test_160", "question": "What is the name of the ballpark that the Milwaukee Brewers play at?", "golden_answers": ["County Stadium|Miller Park"]}
+{"id": "test_161", "question": "Where was the first J.C. Penney store opened?", "golden_answers": ["Kemmerer\\s?, Wyo\\.?"]}
+{"id": "test_162", "question": "What is the chief religion for Peru?", "golden_answers": ["Catholic"]}
+{"id": "test_163", "question": "How tall is the Washington Monument?", "golden_answers": ["555\\s*('|f(ee|oo)?t)|169\\s*m"]}
+{"id": "test_164", "question": "What is the city of brotherly love?", "golden_answers": ["Philadelphia"]}
+{"id": "test_165", "question": "How long is a quarter in an NBA game?", "golden_answers": ["12.m.*"]}
+{"id": "test_166", "question": "What is the deepest lake in the world?", "golden_answers": ["Baikal"]}
+{"id": "test_167", "question": "What name is given to the science of map-making?", "golden_answers": ["Cartography"]}
+{"id": "test_168", "question": "What is the color of blood?", "golden_answers": ["red"]}
+{"id": "test_169", "question": "What is a peninsula in the Philippines?", "golden_answers": ["Bataan|Bicol|Zamboanga"]}
+{"id": "test_170", "question": "Where does cinnamon come from?", "golden_answers": ["Sri Lanka"]}
+{"id": "test_171", "question": "Who was the first person to run the mile in less than four minutes?", "golden_answers": ["Roger Bannister"]}
+{"id": "test_172", "question": "what is the sixteenth episode of the sixth season of the science fiction television series The X-Files?", "golden_answers": ["Alpha"]}
+{"id": "test_173", "question": "What animal has human-like fingerprints?", "golden_answers": ["koala"]}
+{"id": "test_174", "question": "When was the Panama Canal returned to Panama?", "golden_answers": ["1999|1904"]}
+{"id": "test_175", "question": "What business was the source of John D. Rockefeller's fortune?", "golden_answers": ["oil"]}
+{"id": "test_176", "question": "What was the name of the high school in \"Grease\"?", "golden_answers": ["Rydell"]}
+{"id": "test_177", "question": "who received the Nobel Prize for Physiology and Medicine in the year 2013?", "golden_answers": ["((Rothman|Schekman|S[u\u00fc]dhof).*){3}"]}
+{"id": "test_178", "question": "who is the author of Sherlock Holmes?", "golden_answers": ["Doyle"]}
+{"id": "test_179", "question": "How high is Mt. Everest?", "golden_answers": ["29,?029\\s*('|f(ee|oo)?t)|8,?848\\s*m"]}
+{"id": "test_180", "question": "What city is Ole Mississippi University in?", "golden_answers": ["Oxford"]}
+{"id": "test_181", "question": "When did Robert E. Lee surrender in the Civil War?", "golden_answers": ["1865|April 9"]}
+{"id": "test_182", "question": "what is the most lethal poison?", "golden_answers": ["botulin"]}
+{"id": "test_183", "question": "What TV series did Pierce Brosnan play in?", "golden_answers": ["Remington Steele(.*)?|Running Wilde|Hammer House of Horror"]}
+{"id": "test_184", "question": "How many official languages does Switzerland have?", "golden_answers": ["four|\\b4\\b"]}
+{"id": "test_185", "question": "What percentage of the population is left handed?", "golden_answers": ["(ten|10)\\s*(percent|%)"]}
+{"id": "test_186", "question": "By what nickname was musician Ernesto Antonio Puente, Jr. best known?", "golden_answers": ["El Rey|Tito"]}
+{"id": "test_187", "question": "How did Cleopatra die?", "golden_answers": ["asp bite|suicide|a painful and unpleasant experience"]}
+{"id": "test_188", "question": "What year did General Montgomery lead the Allies to a victory over the Axis troops in North Africa?", "golden_answers": ["1942"]}
+{"id": "test_189", "question": "What is Tina Turners real name?", "golden_answers": ["Ann(a|ie) Mae Bullock"]}
+{"id": "test_190", "question": "How many times a day do observant Muslims pray?", "golden_answers": ["\\b(five|5)\\b"]}
+{"id": "test_191", "question": "What year did Mussolini seize power in Italy?", "golden_answers": ["1922"]}
+{"id": "test_192", "question": "What department is responsible for regulating casino gambling in Mississippi?", "golden_answers": ["Mississippi Gaming Commission"]}
+{"id": "test_193", "question": "What is the national anthem in England?", "golden_answers": ["God Save the Queen|Jerusalem|Land of Hope and Glory"]}
+{"id": "test_194", "question": "When did Walt Disney die?", "golden_answers": ["1966"]}
+{"id": "test_195", "question": "How often does the United States government conduct an official population census?", "golden_answers": ["(10|ten) years"]}
+{"id": "test_196", "question": "Who invented the fishing reel?", "golden_answers": ["Chinese|R.\\s?D. Hull|Ustonson"]}
+{"id": "test_197", "question": "What year was President Kennedy killed?", "golden_answers": ["1963"]}
+{"id": "test_198", "question": "Who was Tom Cruise married to last?", "golden_answers": ["Katie Holmes"]}
+{"id": "test_199", "question": "Where is Big Ben?", "golden_answers": ["London|Westminster"]}
+{"id": "test_200", "question": "What is the big prize called in Canadian football?", "golden_answers": ["Grey Cup"]}
+{"id": "test_201", "question": "What was the first satellite in space?", "golden_answers": ["Sputnik"]}
+{"id": "test_202", "question": "What is the first derivative of x^2?", "golden_answers": ["2\\s*.?\\s*x"]}
+{"id": "test_203", "question": "What is the name of the official residence of the President of France?", "golden_answers": ["[E\u00c9]lys[\u00e9e]e palace"]}
+{"id": "test_204", "question": "what language is used by nltk?", "golden_answers": ["Python"]}
+{"id": "test_205", "question": "Where does the vice president live when in office?", "golden_answers": ["U.S\\s?. Naval Observatory|United States"]}
+{"id": "test_206", "question": "What do the opposite sides of a die add up to?", "golden_answers": ["seven|\\b7\\b"]}
+{"id": "test_207", "question": "What is the area of Venezuela?", "golden_answers": ["340,569 square miles|353,?841\\s*sq(uare)?\\s*m(iles)?|916,?445\\s*(square\\s*)?km|916445\\.0|916\\,445 square kilometers and a land area of 882\\,050 square kilometers\\, \\.\\.\\. Fauna\\; Flora \\.\\.\\."]}
+{"id": "test_208", "question": "which number corresponds to * in ASCII?", "golden_answers": ["\\b42\\b|0x2a"]}
+{"id": "test_209", "question": "What actor has a tattoo on his right wrist reading \"Scotland forever\"?", "golden_answers": ["Connery"]}
+{"id": "test_210", "question": "Which city is home to Superman?", "golden_answers": ["Metropolis"]}
+{"id": "test_211", "question": "Which political party is Lionel Jospin a member of?", "golden_answers": ["Socialist"]}
+{"id": "test_212", "question": "Which president was sworn into office on an airplane?", "golden_answers": ["Lyndon Johnson|Lyndon B\\. Johnson"]}
+{"id": "test_213", "question": "How did Jimi Hendrix die?", "golden_answers": ["chok(e|ing)|Barbiturate overdose"]}
+{"id": "test_214", "question": "What membrane controls the amount of light entering the eye?", "golden_answers": ["iris"]}
+{"id": "test_215", "question": "What is Corian made of?", "golden_answers": ["acrylic.*alumina|alumina.*acrylic"]}
+{"id": "test_216", "question": "what is the moon of jupiter?", "golden_answers": ["((Io|Europa|Ganymede|Callisto).*){4}|Io|Europe|Ganymede|Callisto|the four Galilean moons"]}
+{"id": "test_217", "question": "What company makes Bentley cars?", "golden_answers": ["Rolls\\s?-?\\s?Royce|VW|Volkswagen|Bentley Motors"]}
+{"id": "test_218", "question": "which is the central region of the anterior part of the hand?", "golden_answers": ["palm"]}
+{"id": "test_219", "question": "Who wrote \"East is east, west is west and never the twain shall meet\"?", "golden_answers": ["Kipling"]}
+{"id": "test_220", "question": "What band did the music for the 1970's film \"Saturday Night Fever\"?", "golden_answers": ["Bee Gees"]}
+{"id": "test_221", "question": "When was the U.N. created?", "golden_answers": ["1945"]}
+{"id": "test_222", "question": "What country's soldiers hid in the Trojan horse?", "golden_answers": ["Greek"]}
+{"id": "test_223", "question": "When did \"The Simpsons\" first appear on television?", "golden_answers": ["198(7|9)"]}
+{"id": "test_224", "question": "What year was Alaska purchased?", "golden_answers": ["1867"]}
+{"id": "test_225", "question": "When did Einstein die?", "golden_answers": ["1955"]}
+{"id": "test_226", "question": "who is the author of the TV series BBC Sherlock?", "golden_answers": ["((Gatiss|Moffat).*){2}| Thompson|Mark Gatiss|Steven Moffat| Moffat Stephen"]}
+{"id": "test_227", "question": "What band was Jerry Garcia with?", "golden_answers": ["Grateful Dead|Jerry Garcia Acoustic Band|Wildwood Boys"]}
+{"id": "test_228", "question": "Who won the Nobel Peace Prize in 1992?", "golden_answers": ["Mench[u\u00fa]|Mench"]}
+{"id": "test_229", "question": "What country is Aswan High Dam located in?", "golden_answers": ["Egypt|the Sudan"]}
+{"id": "test_230", "question": "What was the original name before \"The Star Spangled Banner\"?", "golden_answers": ["Defen[cs]e of Fort M'Henry"]}
+{"id": "test_231", "question": "Where was Declaration of Independence signed?", "golden_answers": ["Philadelphia"]}
+{"id": "test_232", "question": "Where did the U.S. Civil War begin?", "golden_answers": ["Fort Sumter"]}
+{"id": "test_233", "question": "What author wrote under the pen name \"Boz\"?", "golden_answers": ["Dickens"]}
+{"id": "test_234", "question": "What country did Catherine the Great rule?", "golden_answers": ["Russian?"]}
+{"id": "test_235", "question": "Who was the governor of Colorado in 2003?", "golden_answers": ["Owens"]}
+{"id": "test_236", "question": "Where was the Andersonville Prison?", "golden_answers": ["G(eorgi)?a\\.?"]}
+{"id": "test_237", "question": "how many generations are in Gospel of Matthew's version of the Genealogy of Jesus?", "golden_answers": ["\\b4[01]\\b|4"]}
+{"id": "test_238", "question": "Which river runs through Dublin?", "golden_answers": ["Liffey|Dodder|Tolka"]}
+{"id": "test_239", "question": "What is the motto of the \"New York Times\"?", "golden_answers": ["all the news that's fit to print"]}
+{"id": "test_240", "question": "How old was Elvis when he died?", "golden_answers": ["42"]}
+{"id": "test_241", "question": "Where was the battle of Alamo fought?", "golden_answers": ["San Antonio|Texas"]}
+{"id": "test_242", "question": "how many countries are in european union?", "golden_answers": ["\\b2[78]\\b"]}
+{"id": "test_243", "question": "Tell me where the DuPont company is located.", "golden_answers": ["Wilmington|Delaware|United States"]}
+{"id": "test_244", "question": "What is Australia's oldest city?", "golden_answers": ["Sydney"]}
+{"id": "test_245", "question": "How tall is the green monster at Fenway?", "golden_answers": ["(37|thirty.seven)\\s*f(ee|oo)?t|11.*m|the 37\\-foot\\-tall"]}
+{"id": "test_246", "question": "Who was the first black heavyweight champion?", "golden_answers": ["Jack Johnson|Johnson"]}
+{"id": "test_247", "question": "What is the name of the US military base in Cuba?", "golden_answers": ["Guant[a\u00e1]namo"]}
+{"id": "test_248", "question": "what is the national anthem of usa?", "golden_answers": ["The Star-Spangled Banner|the American national anthem\\,"]}
+{"id": "test_249", "question": "In which country is Timbuktu?", "golden_answers": ["Mali"]}
+{"id": "test_250", "question": "Who was Sherlock Holmes' arch enemy?", "golden_answers": ["Moriarty"]}
+{"id": "test_251", "question": "What does cc mean in letter writing?", "golden_answers": ["carbon copy"]}
+{"id": "test_252", "question": "What is the name of the volcano that destroyed the ancient city of Pompeii?", "golden_answers": ["Vesuvius"]}
+{"id": "test_253", "question": "What city was the first in the world to have a population over one million?", "golden_answers": ["London|Xi'an"]}
+{"id": "test_254", "question": "What do the French call the English Channel?", "golden_answers": ["La Manche"]}
+{"id": "test_255", "question": "What passage has the Ten Commandments?", "golden_answers": ["Exodus|Deuteronomy"]}
+{"id": "test_256", "question": "What number did Michael Jordan wear?", "golden_answers": ["(23|45)|Twenty-three"]}
+{"id": "test_257", "question": "What does CPR stand for?", "golden_answers": ["Contraceptive Prevalence Rate|cardio\\s?-?\\s?pulm(o|i)nary resuscitation"]}
+{"id": "test_258", "question": "Where was Abraham Lincoln born?", "golden_answers": ["Kentucky|Larue County|Hardin County|Hodgenville"]}
+{"id": "test_259", "question": "In which capital city is the River Seine?", "golden_answers": ["Paris"]}
+{"id": "test_260", "question": "How did Virginia Woolf die?", "golden_answers": ["river|drown|suicide"]}
+{"id": "test_261", "question": "What mythical Scottish town appears for one day every 100 years?", "golden_answers": ["Brigadoon|only one day"]}
+{"id": "test_262", "question": "When was \"Cold Mountain\" written?", "golden_answers": ["1997"]}
+{"id": "test_263", "question": "On what continent is Egypt located?", "golden_answers": ["African?"]}
+{"id": "test_264", "question": "What gas is 78 percent of the earth's atmosphere?", "golden_answers": ["nitrogen"]}
+{"id": "test_265", "question": "How did the Lindy Hop get its name?", "golden_answers": ["Lindbergh|Snowden"]}
+{"id": "test_266", "question": "What common medicine discovered by native Americans is from the bark of a willow tree?", "golden_answers": ["aspirin"]}
+{"id": "test_267", "question": "What is the longest river in the world?", "golden_answers": ["Amazon|Nile"]}
+{"id": "test_268", "question": "What is the name of the computer which beat Kasparov at chess in 1997?", "golden_answers": ["Deep Blue"]}
+{"id": "test_269", "question": "who discovered transposable elements - transposons?", "golden_answers": ["McClintock"]}
+{"id": "test_270", "question": "What country was ruled by King Arthur?", "golden_answers": ["Britain|Engl(and|ish)"]}
+{"id": "test_271", "question": "What is the democratic party symbol?", "golden_answers": ["donkey"]}
+{"id": "test_272", "question": "What is the \"Sunflower State\"?", "golden_answers": ["Kansas"]}
+{"id": "test_273", "question": "What is the name of Abbott and Costello's famous routine?", "golden_answers": ["Who's on First"]}
+{"id": "test_274", "question": "what is the inode number of the root directory in the reiser4 file system?", "golden_answers": ["-1\\b"]}
+{"id": "test_275", "question": "What nation is home to the Kaaba?", "golden_answers": ["Saudi Arabia"]}
+{"id": "test_276", "question": "When was MTV started?", "golden_answers": ["1981"]}
+{"id": "test_277", "question": "in which country was osama bin laden killed?", "golden_answers": ["Pakistan"]}
+{"id": "test_278", "question": "What continent is the world's largest dessert on?", "golden_answers": ["Africa"]}
+{"id": "test_279", "question": "Who has the most no hitters in major league baseball?", "golden_answers": ["Ryan"]}
+{"id": "test_280", "question": "What year did \"New Coke\" come out?", "golden_answers": ["1985"]}
+{"id": "test_281", "question": "What is the oldest national park in the U.S.?", "golden_answers": ["Yellowstone"]}
+{"id": "test_282", "question": "When was the Tet offensive in Vietnam?", "golden_answers": ["1968"]}
+{"id": "test_283", "question": "Where did Dr. King give his speech in Washington?", "golden_answers": ["Lincoln Memorial"]}
+{"id": "test_284", "question": "Which vintage rock and roll singer was known as \"The Killer\"?", "golden_answers": ["Jerry Lee Lewis"]}
+{"id": "test_285", "question": "When was Davy Crockett born?", "golden_answers": ["1786|August 17"]}
+{"id": "test_286", "question": "What is the area of western Germany that is known for its rich coal deposits?", "golden_answers": ["Ruhr"]}
+{"id": "test_287", "question": "When was OJ Simpson arrested for murder?", "golden_answers": ["1994"]}
+{"id": "test_288", "question": "What is the state with the smallest population?", "golden_answers": ["Wyoming|Pitcairn|Vatican"]}
+{"id": "test_289", "question": "Who was the first head of the FBI?", "golden_answers": ["Hoover"]}
+{"id": "test_290", "question": "How many mph do you have to go to break the sound barrier?", "golden_answers": ["763.035|about 750|761|770 mph|Mach\\\u00a01\\.012 or 1\\,240\\\u00a0km\\/h \\(776\\.2\\\u00a0mph\\) while in a controlled dive through 41\\,088\\\u00a0feet \\(12\\,510\\\u00a0m\\)"]}
+{"id": "test_291", "question": "When was King Louis XIV born?", "golden_answers": ["1638"]}
+{"id": "test_292", "question": "What is the national airline of Spain?", "golden_answers": ["Iberia"]}
+{"id": "test_293", "question": "How many American deaths were there in the Korean war?", "golden_answers": ["\\b3[0-9],?[0-9]{3}\\b|The casualty toll had been reported as 54\\,246 until June 2000"]}
+{"id": "test_294", "question": "What major league baseball player has 511 pitching victories?", "golden_answers": ["Cy Young"]}
+{"id": "test_295", "question": "where you can find pyramids?", "golden_answers": ["Egypt"]}
+{"id": "test_296", "question": "How many NFL teams are there?", "golden_answers": ["3[12]"]}
+{"id": "test_297", "question": "What is the lowest point on dry land?", "golden_answers": ["Dead Sea"]}
+{"id": "test_298", "question": "What is Barbie's full name?", "golden_answers": ["(Barbie|Barbara) Millicent Roberts"]}
+{"id": "test_299", "question": "When was Declaration of Independence signed?", "golden_answers": ["1776|July 4"]}
+{"id": "test_300", "question": "How much sleep should a child get at night?", "golden_answers": ["((9|1[0-5])\\s*(-|to)?\\s*)+h(our)?"]}
+{"id": "test_301", "question": "What country produces the most emeralds?", "golden_answers": ["Colombia"]}
+{"id": "test_302", "question": "Which religion has the largest number of followers worldwide?", "golden_answers": ["Christian|Roman Catholic"]}
+{"id": "test_303", "question": "what is the name of Kirk's starship?", "golden_answers": ["Enterprise"]}
+{"id": "test_304", "question": "How did Cincinnati get its name?", "golden_answers": ["Cincinnatus|Arthur St. Clair"]}
+{"id": "test_305", "question": "What year was the phonograph invented?", "golden_answers": ["187(7|8)"]}
+{"id": "test_306", "question": "What does DNA stand for?", "golden_answers": ["deoxyribonucleic acid"]}
+{"id": "test_307", "question": "How did Brandon Lee die?", "golden_answers": ["shooting|gunshot|film|movie|Accident"]}
+{"id": "test_308", "question": "who invented dynamite ?", "golden_answers": ["Alfred Nobel|Nobel"]}
+{"id": "test_309", "question": "When did Bob Marley die?", "golden_answers": ["1981"]}
+{"id": "test_310", "question": "What famous verse did Sarah Hale write in 1830?", "golden_answers": ["Mary Had a Little Lamb|Mary's Lamb"]}
+{"id": "test_311", "question": "What do you call a bone doctor?", "golden_answers": ["Orthopedic|Orthopedist|Orthopaedic surgery or orthopaedics"]}
+{"id": "test_312", "question": "When did the Golden Gate Bridge get finished?", "golden_answers": ["193(7|0s)"]}
+{"id": "test_313", "question": "How tall is Tom Cruise?", "golden_answers": ["5\\s*(f(ee|oo)?t|')\\s*7\\s*(in(ch.*)?|\")"]}
+{"id": "test_314", "question": "When were the first postage stamps issued in the United States?", "golden_answers": ["1847"]}
+{"id": "test_315", "question": "The Hindenburg disaster took place in 1937 in which New Jersey town?", "golden_answers": ["Lakehurst"]}
+{"id": "test_316", "question": "When was Jackie Robinson born?", "golden_answers": ["1919"]}
+{"id": "test_317", "question": "Who is the evil H.R. Director in \"Dilbert\"?", "golden_answers": ["Catbert"]}
+{"id": "test_318", "question": "How large of a litter does a rat have at one time?", "golden_answers": ["\\b(7|seven|14|11|10|12)\\b"]}
+{"id": "test_319", "question": "What is Horatio's relationship to Hamlet?", "golden_answers": ["friend"]}
+{"id": "test_320", "question": "How deep is the Grand Canyon?", "golden_answers": ["(1|a) mile|(6,?000|5,?700)\\s*f(ee|oo|')?t|1,?[68]00\\s*m|1.6\\s*km"]}
+{"id": "test_321", "question": "What is the degree of tilt of Earth?", "golden_answers": ["23.4?5"]}
+{"id": "test_322", "question": "What was the name of the first child of English parents to be born in America?", "golden_answers": ["Virginia Dare"]}
+{"id": "test_323", "question": "What college did Allen Iverson go to?", "golden_answers": ["Georgetown"]}
+{"id": "test_324", "question": "How did Julius Irving's son die?", "golden_answers": ["cocaine|drown"]}
+{"id": "test_325", "question": "Which baseball star stole 130 bases in 1982?", "golden_answers": ["Henderson"]}
+{"id": "test_326", "question": "Which space shuttle exploded?", "golden_answers": ["((Columbia|Challenger).*){2}|the Challenger Space Shuttle|The space shuttle Challenger"]}
+{"id": "test_327", "question": "what is the nearest planet to the sun?", "golden_answers": ["Mercury"]}
+{"id": "test_328", "question": "What is the age of our solar system?", "golden_answers": ["4.(5[0-9]*|6) billion years"]}
+{"id": "test_329", "question": "How high is Mt. Hood?", "golden_answers": ["11,?24[0-9]\\s*f(oo|ee)?t|3,?429\\s*m|11\\,250 feet"]}
+{"id": "test_330", "question": "How many stripes are on the American flag?", "golden_answers": ["13|thirteen"]}
+{"id": "test_331", "question": "What instrument did the jazz musician Art Tatum play?", "golden_answers": ["pian(o|ist)"]}
+{"id": "test_332", "question": "How big is the killer whale?", "golden_answers": ["\\b[68]\\s*m|2[0-6]\\s*f(ee|oo)?t|\\b[56]\\b(\\s*t|.*ton)"]}
+{"id": "test_333", "question": "What does \"E Pluribus Unum\" mean?", "golden_answers": ["out of .*many\\s?, one"]}
+{"id": "test_334", "question": "Who was the lead singer for the Commodores?", "golden_answers": ["Lionel Richie"]}
+{"id": "test_335", "question": "Who created the literary character Phineas Fogg?", "golden_answers": ["Verne"]}
+{"id": "test_336", "question": "What city is Duke University in?", "golden_answers": ["Durham"]}
+{"id": "test_337", "question": "How fast can a nuclear submarine travel?", "golden_answers": ["(25|30|33)\\s*knots|29\\s*(mph|miles per hour)|46\\s*(kph|kilometers per hour)"]}
+{"id": "test_338", "question": "What gift is proper for a 1st anniversary?", "golden_answers": ["paper|plastic|clock"]}
+{"id": "test_339", "question": "What is the Stanley Cup made of?", "golden_answers": ["silver"]}
+{"id": "test_340", "question": "What is the state bird of Alaska?", "golden_answers": ["willow ptarmigans?|\\(Lagopus lagopus\\)"]}
+{"id": "test_341", "question": "What language is spoken in Latin America?", "golden_answers": ["((spanish|portuguese).*){2}|spanish|portuguese|Romance languages"]}
+{"id": "test_342", "question": "What is the height of the tallest redwood?", "golden_answers": ["367 1/2|367.5|370\\s?-\\s?foot(-tall)?|379\\s*f(ee|oo)?t|115.5\\s*m|93\\.6 m|379\\.7 feet|115\\.7 meters"]}
+{"id": "test_343", "question": "Who wrote \"Strange Case of Dr Jekyll and Mr Hyde\" ?", "golden_answers": ["Stevenson"]}
+{"id": "test_344", "question": "Where is the national hurricane center located?", "golden_answers": ["Miami|Florida"]}
+{"id": "test_345", "question": "Where is Mount Olympus?", "golden_answers": ["Greece|the Balkans"]}
+{"id": "test_346", "question": "Where are the British Crown jewels kept?", "golden_answers": ["London Tower|Tower of London|London|the Tower"]}
+{"id": "test_347", "question": "What is the nickname for the national New Zealand basketball team?", "golden_answers": ["Tall Blacks|Kiwis"]}
+{"id": "test_348", "question": "How tall is the Sphinx?", "golden_answers": ["20 met(er|re)s?|20\\s*m|66\\s*f(ee|oo)?t"]}
+{"id": "test_349", "question": "what is the atomic number of Uranium?", "golden_answers": ["\\b92\\b"]}
+{"id": "test_350", "question": "How did Malcolm X die?", "golden_answers": ["assassin|murder|shot"]}
+{"id": "test_351", "question": "How did Einstein die?", "golden_answers": ["abdominal.*aneurysm|Ulm\\, Wurttemberg\\, Germany Location of death"]}
+{"id": "test_352", "question": "What are people born 1965 through 1980 called?", "golden_answers": ["Generation X|1963\\\u20131980"]}
+{"id": "test_353", "question": "What Canadian city has the largest population?", "golden_answers": ["Toronto"]}
+{"id": "test_354", "question": "What did Ozzy Osbourne bite the head off of?", "golden_answers": ["bat|\\\u2013 Ozzy Osbourne"]}
+{"id": "test_355", "question": "What instrument did Louis Armstrong play?", "golden_answers": ["cornet|trumpet|August 4\\, 1901"]}
+{"id": "test_356", "question": "What fruit's stone does Laetrile come from?", "golden_answers": ["apricot|the seeds of stone fruits of the Prunus genus"]}
+{"id": "test_357", "question": "What museum in Philadelphia was used in \"Rocky\"?", "golden_answers": ["Art\\s+Museum|Museum of Art"]}
+{"id": "test_358", "question": "How many floors are in the Empire State Building?", "golden_answers": ["102|104 floors|more than 100 floors"]}
+{"id": "test_359", "question": "What college did Magic Johnson attend?", "golden_answers": ["Michigan State"]}
+{"id": "test_360", "question": "What city is Southwestern University in?", "golden_answers": ["Georgetown,?"]}
+{"id": "test_361", "question": "What Liverpool club spawned the Beatles?", "golden_answers": ["Cavern"]}
+{"id": "test_362", "question": "what is the moon of mars?", "golden_answers": ["((Phobos|Deimos).*){2}"]}
+{"id": "test_363", "question": "What was the Hunchback of Notre Dame's real name?", "golden_answers": ["Quasimodo"]}
+{"id": "test_364", "question": "Who stabbed Monica Seles?", "golden_answers": ["Parche|Graf fan|fan of (Steffi )?Graf|Graf"]}
+{"id": "test_365", "question": "When did the battle of Iwo Jima take place?", "golden_answers": ["1944|1945"]}
+{"id": "test_366", "question": "When was the hot air balloon invented?", "golden_answers": ["1783"]}
+{"id": "test_367", "question": "How far would you run if you participate in a marathon?", "golden_answers": ["26(.2)?\\s?-?\\s?miles?|42.195 kilometers"]}
+{"id": "test_368", "question": "What engineer designed the Erie Canal?", "golden_answers": ["Benjamin Wright"]}
+{"id": "test_369", "question": "Who was elected President of South Africa in 1994?", "golden_answers": ["Mandela"]}
+{"id": "test_370", "question": "Who was responsible for the killing of Duncan in \"Macbeth\"?", "golden_answers": ["Macbeth"]}
+{"id": "test_371", "question": "How do you say \"house\" in Spanish?", "golden_answers": ["casa"]}
+{"id": "test_372", "question": "When was the city of New Orleans founded?", "golden_answers": ["1718"]}
+{"id": "test_373", "question": "When was the first potato chip made?", "golden_answers": ["1853"]}
+{"id": "test_374", "question": "Who discovered polarography?", "golden_answers": ["Heyrovsk[y\u00fd]"]}
+{"id": "test_375", "question": "What national monument was designated as the first national monument in 1906?", "golden_answers": ["Devils Tower"]}
+{"id": "test_376", "question": "When was the Vietnam Veterans Memorial in Washington, D.C. built?", "golden_answers": ["1982"]}
+{"id": "test_377", "question": "When was the first patent filed on the ice cream cone?", "golden_answers": ["1903|1902|1904"]}
+{"id": "test_378", "question": "When is Gerald Ford's birthday?", "golden_answers": ["July 14, 1913"]}
+{"id": "test_379", "question": "When was barbed wire invented?", "golden_answers": ["1867"]}
+{"id": "test_380", "question": "When was abortion legalized in the U.S.?", "golden_answers": ["1973"]}
+{"id": "test_381", "question": "What chemical is in chocolate that helps with depression?", "golden_answers": ["phenylethylamine|dopamine|serotonin"]}
+{"id": "test_382", "question": "What continent is India on?", "golden_answers": ["Asia"]}
+{"id": "test_383", "question": "What college did Allen Iverson attend?", "golden_answers": ["Georgetown"]}
+{"id": "test_384", "question": "when did the biggest underground terror attack happen?", "golden_answers": ["2005|2004"]}
+{"id": "test_385", "question": "When was the first TV invented?", "golden_answers": ["192[567]"]}
+{"id": "test_386", "question": "Where was the first McDonalds built?", "golden_answers": ["California|San Bernardino( , Calif.)?"]}
+{"id": "test_387", "question": "How far is the pitchers mound from home plate in softball?", "golden_answers": ["46\\s*f(ee|oo)?t"]}
+{"id": "test_388", "question": "What was the profession of American patriot Paul Revere?", "golden_answers": ["silversmith|engraver"]}
+{"id": "test_389", "question": "what is the national anthem of czech republic?", "golden_answers": ["Kde domov m[u\u016f]j|Where is my home"]}
+{"id": "test_390", "question": "What is the name of the heroine in \"Gone with the Wind\"?", "golden_answers": ["Scarlett"]}
+{"id": "test_391", "question": "What lays blue eggs?", "golden_answers": ["Ameracuana|Aracuana|Starlings |The Ameraucana| bluebird eggs"]}
+{"id": "test_392", "question": "What day did Pearl Harbor occur?", "golden_answers": ["Dec\\s?(ember|.) 7,?|Sunday|1941\\-12\\-07"]}
+{"id": "test_393", "question": "who invented the tesla coil?", "golden_answers": ["Nikola Tesla"]}
+{"id": "test_394", "question": "What country made the Statue of Liberty?", "golden_answers": ["France"]}
+{"id": "test_395", "question": "How tall is the tallest pyramid?", "golden_answers": ["14[67].*\\bm|481\\s*f(ee|oo)?t|13[89].*\\bm|455\\s*f(ee|oo)?t"]}
+{"id": "test_396", "question": "How many counties are in California?", "golden_answers": ["58"]}
+{"id": "test_397", "question": "When did Mike Tyson bite Holyfield's ear?", "golden_answers": ["1997"]}
+{"id": "test_398", "question": "What color is the computer which beat Kasparov at chess in 1997?", "golden_answers": ["blue"]}
+{"id": "test_399", "question": "When is Jennifer Lopez's birthday?", "golden_answers": ["July 24,?|1969"]}
+{"id": "test_400", "question": "Where is Hill Air Force Base?", "golden_answers": ["Ogden,?|Utah|about 120 kilometers west of Salt_Lake_City"]}
+{"id": "test_401", "question": "Where is the Statue of Liberty?", "golden_answers": ["N(\\.|ew)\\s?Y(ork)?|Liberty Island|the United States"]}
+{"id": "test_402", "question": "What court case overturned Plessy v. Furgeson?", "golden_answers": ["Brown vs?. Board of Education"]}
+{"id": "test_403", "question": "What is rum made out of?", "golden_answers": ["molasses|sugar cane|sugarcane juice"]}
+{"id": "test_404", "question": "When was Google founded?", "golden_answers": ["1998"]}
+{"id": "test_405", "question": "When was liquid water found on Mars?", "golden_answers": ["June 2[12]\\s*,\\s* 2000|2012|1965|September 28 2015"]}
+{"id": "test_406", "question": "What is a group of antelope called?", "golden_answers": ["herd"]}
+{"id": "test_407", "question": "Who succeeded Ferdinand Marcos?", "golden_answers": ["Corazon Aquino"]}
+{"id": "test_408", "question": "How far is it from the pitcher's mound to home plate?", "golden_answers": ["60\\s*('|f(ee|oo)?t).*6\\s*(in|\")|18.4\\s*m"]}
+{"id": "test_409", "question": "How many stomachs does a cow have?", "golden_answers": ["four|\\b4\\b"]}
+{"id": "test_410", "question": "What dress size was Marilyn Monroe?", "golden_answers": ["\\b(14|12|8|4)\\b"]}
+{"id": "test_411", "question": "What year did California become a territory?", "golden_answers": ["1848"]}
+{"id": "test_412", "question": "What class of drug is Xanax?", "golden_answers": [".*anxi.*|psychoactive|Benzodiazepine"]}
+{"id": "test_413", "question": "What year did Nintendo 64 come out?", "golden_answers": ["1996"]}
+{"id": "test_414", "question": "What year did Marco Polo travel to Asia?", "golden_answers": ["1271"]}
+{"id": "test_415", "question": "What is Canada's most populous city?", "golden_answers": ["Toronto"]}
+{"id": "test_416", "question": "What country was the Battle of Verdun fought in?", "golden_answers": ["France|The Battle of Verdun 1916\\."]}
+{"id": "test_417", "question": "What president declared Mothers' Day?", "golden_answers": ["Wilson"]}
+{"id": "test_418", "question": "Who was the only golfer to win the U.S. and British Opens and amateurs in the same year?", "golden_answers": ["Bobby Jones|Jones"]}
+{"id": "test_419", "question": "Where was President Lincoln buried?", "golden_answers": ["Oak Ridge Cemetery|Illinois|Springfield"]}
+{"id": "test_420", "question": "Where was the movie \"Somewhere in Time\" filmed?", "golden_answers": ["Grand Hotel|Mackinac Island"]}
+{"id": "test_421", "question": "What is the name of the longest running soap opera TV series?", "golden_answers": ["Coronation Street"]}
+{"id": "test_422", "question": "What does an English stone equal?", "golden_answers": ["14 pound|6.*(kg|kilogram)"]}
+{"id": "test_423", "question": "What is the currency of Denmark?", "golden_answers": ["kroner?|DKK"]}
+{"id": "test_424", "question": "When was Sputnik launched?", "golden_answers": ["1957"]}
+{"id": "test_425", "question": "What percent of the U.S. is African American?", "golden_answers": ["12(\\.2)?\\s*(percent|%)|13\\.2\\%|between 12\\.3 and 13\\.2"]}
+{"id": "test_426", "question": "When was the Red Cross founded?", "golden_answers": ["1859|186[234]|1919"]}
+{"id": "test_427", "question": "What country was Catherine the Great from?", "golden_answers": ["Prussia|Russia"]}
+{"id": "test_428", "question": "What cathedral is in Claude Monet's paintings?", "golden_answers": ["Rouen"]}
+{"id": "test_429", "question": "who received the Nobel Prize for Physiology and Medicine in the year 2012?", "golden_answers": ["((Gurdon|Yamanaka).*){2}"]}

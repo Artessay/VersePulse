@@ -1,12 +1,12 @@
+import os
 from elasticsearch import Elasticsearch
-from elasticsearch.exceptions import NotFoundError
 
 class WikiSearcher:
     """
     A class to interact with an Elasticsearch index for performing search queries.
     """
 
-    def __init__(self, index_name='wiki', hostname='localhost', port=9200):
+    def __init__(self, index_name='wiki_en', url: str = "https://localhost:9200"):
         """
         Initializes the ElasticsearchSearcher with the given configuration.
 
@@ -16,14 +16,15 @@ class WikiSearcher:
             port (int, optional): Elasticsearch port. Defaults to 9200.
             size (int, optional): Number of search results to return. Defaults to 10.
         """
+
         self.index_name = index_name
-        self.es = Elasticsearch([{'host': hostname, 'port': port}])
+        self.es = self.create_es_client(url)
 
         # Verify connection
         if not self.es.ping():
-            raise ConnectionError(f"Cannot connect to Elasticsearch at {hostname}:{port}")
+            raise ConnectionError(f"Cannot connect to Elasticsearch at {url}")
 
-    def search(self, query, size=10):
+    def search(self, query, size=5):
         """
         Searches the Elasticsearch index for documents matching the query.
 
@@ -33,39 +34,23 @@ class WikiSearcher:
         Returns:
             list: A list of dictionaries containing search results.
         """
-        # Define the search query using multi_match to search in 'title' and 'txt' fields
-        search_query = {
+        # Define the search query using multi_match to search in 'title' and 'text' fields
+        search_body = {
             "query": {
                 "multi_match": {
                     "query": query,
-                    "fields": ["title", "txt"]  # Adjust fields based on your index
+                    "fields": ["title", "text"] 
                 }
-            }
+            },
+            "size": size
         }
 
-        try:
-            # Execute the search
-            index_name = self.index_name
-            response = self.es.search(index=index_name, body=search_query, size=size)
-        except NotFoundError:
-            print(f"Index '{self.index_name}' not found. Please ensure the index name is correct and has been created.")
-            return []
-        except Exception as e:
-            print(f"An error occurred during the search: {e}")
-            return []
+        # Execute the search
+        response = self.es.search(index=self.index_name, body=search_body)
 
-        # Parse the search results
-        results = []
-        for hit in response['hits']['hits']:
-            doc = {
-                'id': hit['_id'],
-                'score': hit['_score'],
-                'title': hit['_source'].get('title', ''),
-                'content': hit['_source'].get('txt', '')
-            }
-            results.append(doc)
-
-        return results
+        hits = response['hits']['hits']
+        relevant_docs = [hit['_source'] for hit in hits]
+        return relevant_docs
 
     def close(self):
         """
@@ -73,19 +58,29 @@ class WikiSearcher:
         """
         self.es.close()
 
+    @staticmethod
+    def create_es_client(url: str) -> Elasticsearch:
+        """Initialize Elasticsearch client with environment configuration."""
+        if not os.environ.get('ELASTIC_SEARCH_PASSWORD'):
+            raise ValueError('ELASTIC_SEARCH_PASSWORD environment variable not set')
+
+        return Elasticsearch(
+            url,
+            basic_auth=("elastic", os.getenv("ELASTIC_SEARCH_PASSWORD")),
+            verify_certs=False,
+            ssl_show_warn=False,
+        )
+
 def main():
     """
     Main function to handle command-line arguments and perform searches.
     """
     # Parse command-line arguments
-    query = "Graph Neural Networks"
+    query = "Paris 2024 Olympic Games"
 
     try:
         # Initialize the searcher
-        searcher = WikiSearcher(
-            hostname="123.57.228.132",
-            port="8288",
-        )
+        searcher = WikiSearcher()
 
         # Perform the search
         results = searcher.search(query)
@@ -95,11 +90,8 @@ def main():
             print("No relevant documents found.")
         else:
             for idx, doc in enumerate(results, start=1):
-                print(f"Result {idx}:")
-                print(f"ID: {doc['id']}")
-                print(f"Score: {doc['score']}")
-                print(f"Title: {doc['title']}")
-                print(f"Content: {doc['content']}\n")
+                print(f"content #{idx}:")
+                print(f"{doc}\n")
 
     except ConnectionError as ce:
         print(f"Connection Error: {ce}")

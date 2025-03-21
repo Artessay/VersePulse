@@ -5,20 +5,19 @@ from flashrag.pipeline import SequentialPipeline
 from flashrag.prompt import PromptTemplate
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model_path", type=str)
-parser.add_argument("--retriever_path", type=str)
+parser.add_argument("-d", "--dataset_name", default="nq", type=str)
 args = parser.parse_args()
 
 config_dict = {
     "data_dir": "dataset/",
-    "index_path": "indexes/e5_Flat.index",
-    "corpus_path": "indexes/general_knowledge.jsonl",
-    "model2path": {"e5": args.retriever_path, "llama3-8B-instruct": args.model_path},
+    "dataset_name": args.dataset_name,
+    # "index_path": "indexes/e5_Flat.index",
+    # "corpus_path": "indexes/general_knowledge.jsonl",
     "generator_model": "llama3-8B-instruct",
-    "retrieval_method": "e5",
+    # "retrieval_method": "e5",
     "metrics": ["em", "f1", "acc"],
-    "retrieval_topk": 1,
-    "save_intermediate_data": True,
+    # "retrieval_topk": 1,
+    # "save_intermediate_data": True,
 }
 
 config = Config(config_dict=config_dict)

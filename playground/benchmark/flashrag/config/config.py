@@ -5,6 +5,7 @@ import yaml
 import random
 import datetime
 
+from versepulse.cache_path import get_model_cache_path
 
 class Config:
     def __init__(self, config_file_path=None, config_dict={}):
@@ -217,6 +218,9 @@ class Config:
 
         if self.final_config.get("generator_model_path") is None:
             self.final_config["generator_model_path"] = model2path.get(generator_model, generator_model)
+
+            if self.final_config["generator_model_path"] and not os.path.exists(self.final_config["generator_model_path"]):
+                self.final_config["generator_model_path"] = get_model_cache_path(self.final_config["generator_model_path"])
 
         if "refiner_name" in self.final_config:
             refiner_model = self.final_config["refiner_name"]

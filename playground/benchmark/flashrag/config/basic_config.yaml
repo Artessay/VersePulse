@@ -1,13 +1,10 @@
 # ------------------------------------------------Global Paths------------------------------------------------#
 # Paths to various models
 model2path:
-  e5: "intfloat/e5-base-v2"
-  bge: "BAAI/bge-base-en-v1.5"
-  contriever: "facebook/contriever"
-  llama2-7B-chat: "meta-llama/Llama-2-7b-chat-hf"
-  llama2-7B: "meta-llama/Llama-2-7b-hf"
-  llama2-13B: "meta-llama/Llama-2-13b-hf"
-  llama2-13B-chat: "meta-llama/Llama-2-13b-chat-hf"
+  # e5: "intfloat/e5-base-v2"
+  # bge: "BAAI/bge-base-en-v1.5"
+  # contriever: "facebook/contriever"
+  llama3-8B-instruct: "meta-llama/meta-llama-3.1-8B-instruct"
 
 # Pooling methods for each embedding model
 model2pooling:
@@ -31,7 +28,7 @@ method2index:
 data_dir: "dataset/"
 save_dir: "output/"
 
-gpu_id: "0,1,2,3"
+gpu_id: "4,5,6,7"
 dataset_name: "nq" # name of the dataset in data_dir
 split: ["test"] # dataset split to load (e.g. train,dev,test)
 
@@ -40,7 +37,7 @@ test_sample_num: ~ # number of samples to test (only work in dev/test split), if
 random_sample: False # whether to randomly sample the test samples
 
 # Seed for reproducibility
-seed: 2024
+seed: 2025
 
 # Whether save intermediate data
 save_intermediate_data: True

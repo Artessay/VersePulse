@@ -64,7 +64,7 @@ class AlgorithmConfig:
 class TrainerConfig:
     total_episodes: int = 10
     max_steps: Optional[int] = None
-    project_name: str = "verse_pulse"
+    project_name: str = "easy_r1"
     experiment_name: str = "demo"
     logger: Tuple[str] = ("console", "wandb")
     nnodes: int = 1

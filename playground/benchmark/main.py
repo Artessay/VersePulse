@@ -11,13 +11,8 @@ args = parser.parse_args()
 config_dict = {
     "data_dir": "dataset/",
     "dataset_name": args.dataset_name,
-    # "index_path": "indexes/e5_Flat.index",
-    # "corpus_path": "indexes/general_knowledge.jsonl",
     "generator_model": "llama3-8B-instruct",
-    # "retrieval_method": "e5",
     "metrics": ["em", "f1", "acc"],
-    # "retrieval_topk": 1,
-    # "save_intermediate_data": True,
 }
 
 config = Config(config_dict=config_dict)

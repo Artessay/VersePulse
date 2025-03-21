@@ -20,8 +20,9 @@ method2index:
   bm25: ~
   contriever: ~
   clip:
-    "text": "path/to/text_index"
-    "image": "path/to/image_index"
+    "text": ~
+    "image": ~
+
 
 # ------------------------------------------------Environment Settings------------------------------------------------#
 # Directory paths for data and outputs
@@ -45,8 +46,9 @@ save_note: "experiment"
 
 # -------------------------------------------------Retrieval Settings------------------------------------------------#
 # If set the name, the model path will be find in global paths
-retrieval_method: "e5" # name or path of the retrieval model.
+retrieval_method: "bm25" # name or path of the retrieval model.
 retrieval_model_path: ~ # path to the retrieval model
+index_name: "wiki_en"
 index_path: ~ # set automatically if not provided.
 multimodal_index_path_dict: ~ # use for multimodal retreiver, example format: {'text': 'path/to/text_index' or None, 'image': 'path/to/image_index' or None}
 faiss_gpu: False # whether use gpu to hold index

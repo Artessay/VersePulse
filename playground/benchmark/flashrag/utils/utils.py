@@ -4,6 +4,7 @@ import importlib
 from transformers import AutoConfig
 from flashrag.dataset.dataset import Dataset
 
+from versepulse.wiki_searcher import WikiSearcher
 
 def get_dataset(config):
     """Load dataset from config."""
@@ -77,22 +78,33 @@ def get_retriever(config):
     Returns:
         Retriever: retriever instance
     """
-    if config["use_multi_retriever"]:
-        # must load special class for manage multi retriever
-        return getattr(importlib.import_module("flashrag.retriever"), "MultiRetrieverRouter")(config)
+    return WikiSearcher(index_name=config["index_name"])
 
-    if config["retrieval_method"] == "bm25":
-        return getattr(importlib.import_module("flashrag.retriever"), "BM25Retriever")(config)
-    else:
-        try:
-            model_config = AutoConfig.from_pretrained(config["retrieval_model_path"])
-            arch = model_config.architectures[0]
-            if "clip" in arch.lower():
-                return getattr(importlib.import_module("flashrag.retriever"), "MultiModalRetriever")(config)
-            else:
-                return getattr(importlib.import_module("flashrag.retriever"), "DenseRetriever")(config)
-        except:
-            return getattr(importlib.import_module("flashrag.retriever"), "DenseRetriever")(config)
+# def get_retriever(config):
+#     r"""Automatically select retriever class based on config's retrieval method
+
+#     Args:
+#         config (dict): configuration with 'retrieval_method' key
+
+#     Returns:
+#         Retriever: retriever instance
+#     """
+#     if config["use_multi_retriever"]:
+#         # must load special class for manage multi retriever
+#         return getattr(importlib.import_module("flashrag.retriever"), "MultiRetrieverRouter")(config)
+
+#     if config["retrieval_method"] == "bm25":
+#         return getattr(importlib.import_module("flashrag.retriever"), "BM25Retriever")(config)
+#     else:
+#         try:
+#             model_config = AutoConfig.from_pretrained(config["retrieval_model_path"])
+#             arch = model_config.architectures[0]
+#             if "clip" in arch.lower():
+#                 return getattr(importlib.import_module("flashrag.retriever"), "MultiModalRetriever")(config)
+#             else:
+#                 return getattr(importlib.import_module("flashrag.retriever"), "DenseRetriever")(config)
+#         except:
+#             return getattr(importlib.import_module("flashrag.retriever"), "DenseRetriever")(config)
 
 
 def get_reranker(config):

@@ -40,7 +40,7 @@ class PromptTemplate:
         self.system_prompt = system_prompt
         self.user_prompt = user_prompt
         self.enable_chat = enable_chat
-        self.reference_template = reference_template
+        self.reference_template: str = reference_template
 
         # self._check_placeholder()
 
@@ -192,9 +192,11 @@ class PromptTemplate:
     def format_reference(self, retrieval_result):
         format_reference = ""
         for idx, doc_item in enumerate(retrieval_result):
-            content = doc_item["contents"]
-            title = content.split("\n")[0]
-            text = "\n".join(content.split("\n")[1:])
+            title = doc_item["title"]
+            text = doc_item["text"]
+            # content = doc_item["contents"]
+            # title = content.split("\n")[0]
+            # text = "\n".join(content.split("\n")[1:])
             if self.reference_template is not None:
                 format_reference += self.reference_template.format(idx=idx, title=title, text=text)
             else:

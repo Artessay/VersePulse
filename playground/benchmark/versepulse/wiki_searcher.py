@@ -1,5 +1,6 @@
 import os
 from tqdm import tqdm
+from diskcache import Cache
 from elasticsearch import Elasticsearch
 
 class WikiSearcher:
@@ -26,6 +27,8 @@ class WikiSearcher:
         # Verify connection
         if not self.es.ping():
             raise ConnectionError(f"Cannot connect to Elasticsearch at {url}")
+        
+        self.cache = Cache('.wiki_search_cache')
 
     def search(self, query: str, top_k: int = 5):
         """
@@ -37,6 +40,11 @@ class WikiSearcher:
         Returns:
             list: A list of dictionaries containing search results.
         """
+
+        # Check if the query is already in the cache
+        if query in self.cache:
+            return self.cache[query]
+        
         # Define the search query using multi_match to search in 'title' and 'text' fields
         search_body = {
             "query": {
@@ -53,6 +61,10 @@ class WikiSearcher:
 
         hits = response['hits']['hits']
         relevant_docs = [hit['_source'] for hit in hits]
+
+        # Cache the result
+        self.cache[query] = relevant_docs
+
         return relevant_docs
 
     def batch_search(self, queries: list, top_k: int = 5):

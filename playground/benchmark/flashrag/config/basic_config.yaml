@@ -93,7 +93,8 @@ multi_retriever_setting:
       retrieval_model_path: ~
 
 # -------------------------------------------------Generator Settings------------------------------------------------#
-framework: fschat # inference frame work of LLM, supporting: 'hf','vllm','fschat', 'openai'
+# framework: fschat # inference frame work of LLM, supporting: 'hf','vllm','fschat', 'openai'
+framework: vllm # inference frame work of LLM, supporting: 'hf','vllm','fschat', 'openai'
 generator_model: "llama3-8B-instruct" # name or path of the generator model
 # setting for openai model, only valid in openai framework
 openai_setting:

@@ -1,3 +1,4 @@
+.*_search_cache
 output
 
 dataset/wikiasp/train.jsonl

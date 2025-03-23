@@ -1,6 +1,7 @@
 from transformers import AutoTokenizer, AutoConfig
 import tiktoken
 import warnings
+import logging
 
 class PromptTemplate:
     placeholders = ["reference", "question"]
@@ -85,7 +86,7 @@ class PromptTemplate:
             tokenized_prompt = self.tokenizer(prompt, truncation=False, return_tensors="pt").input_ids[0]
 
             if len(tokenized_prompt) > self.max_input_len:
-                print(f"The input text length is greater than the maximum length ({len(tokenized_prompt)} > {self.max_input_len}) and has been truncated!")
+                logging.debug(f"The input text length is greater than the maximum length ({len(tokenized_prompt)} > {self.max_input_len}) and has been truncated!")
                 half = int(self.max_input_len / 2)
                 prompt = self.tokenizer.decode(tokenized_prompt[:half], skip_special_tokens=True) + \
                         self.tokenizer.decode(tokenized_prompt[-half:], skip_special_tokens=True)

@@ -1,5 +1,5 @@
 .*_search_cache
-output
+output/*/intermediate_data.json
 
 dataset/wikiasp/train.jsonl
 dataset/hotpotqa/train.jsonl

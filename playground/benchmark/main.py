@@ -6,13 +6,14 @@ from flashrag.prompt import PromptTemplate
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset_name", default="nq", type=str)
+parser.add_argument("-g", "--generator_model", default="llama3-8b-instruct", type=str)
 parser.add_argument("--gpu_id", default="0,1,2,3", type=str)
 args = parser.parse_args()
 
 config_dict = {
     "data_dir": "dataset/",
     "dataset_name": args.dataset_name,
-    "generator_model": "llama3-8B-instruct",
+    "generator_model": args.generator_model,
     "gpu_id": args.gpu_id,
 }
 

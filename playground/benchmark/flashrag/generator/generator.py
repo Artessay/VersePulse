@@ -388,6 +388,9 @@ class HFCausalLMGenerator(BaseGenerator):
             else:
                 generation_params["eos_token_id"] = extra_eos_tokens
 
+        if "qwen" in self.model_name.lower():
+            generation_params["pad_token_id"] = self.tokenizer.eos_token_id
+
         responses = []
         scores = []
         generated_token_ids = []

@@ -249,8 +249,8 @@ class Config:
 
         self.final_config["save_dir"] = os.path.join(
             save_dir,
-            # f"{self.final_config['dataset_name']}_{save_note}",
-            f"{self.final_config['dataset_name']}_{current_time.strftime('%Y_%m_%d_%H_%M')}_{save_note}",
+            f"{self.final_config['dataset_name']}_{self.final_config['generator_model']}_{save_note}",
+            # f"{self.final_config['dataset_name']}_{self.final_config['generator_model']}_{current_time.strftime('%Y_%m_%d_%H_%M')}_{save_note}",
         )
         os.makedirs(self.final_config["save_dir"], exist_ok=True)
         # save config parameters

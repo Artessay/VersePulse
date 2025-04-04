@@ -1,0 +1,4 @@
+# llamafactory-cli api [config-path]
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+template: qwen
+infer_backend: huggingface #choices： [huggingface, vllm]
